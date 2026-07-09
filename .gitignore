@@ -1,0 +1,62 @@
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+frontend/.env.local
+
+# --- Python (backend) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# --- Node / Next.js (frontend) ---
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+*.tsbuildinfo
+
+# --- Project data ---
+backend/chroma_data/
+uploads/
+
+# --- Credentials ---
+*credentials*.json
+*.pem
+*.key
+
+# --- Docker ---
+docker-compose.override.yml
+
+# --- IDE ---
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Logs ---
+*.log
+logs/

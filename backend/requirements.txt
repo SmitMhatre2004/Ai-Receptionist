@@ -1,0 +1,39 @@
+# =============================================================================
+# Phase 1 — Core Backend Foundation
+# =============================================================================
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+
+# Database
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+
+# Auth (wired up in the Security phase, installed now so config.py imports cleanly)
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.19
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1
+
+# =============================================================================
+# Added in later phases (uncomment as each phase introduces them):
+# =============================================================================
+# langchain==0.3.x
+# langgraph==0.2.x
+# langchain-openai==0.2.x
+# openai==1.x
+# chromadb==0.5.x
+# unstructured[pdf,docx]==0.16.x     # document parsing for RAG uploads
+# google-api-python-client==2.x      # Google Calendar
+# google-auth-httplib2==0.2.x
+# google-auth-oauthlib==1.2.x
+# twilio==9.x                        # WhatsApp / SMS
+# slowapi==0.1.x                     # rate limiting
+# apscheduler==3.x                   # reminder scheduling
